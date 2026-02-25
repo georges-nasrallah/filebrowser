@@ -33,6 +33,6 @@ Default user: `admin`
 
 ## Notes
 
-- Files are served from the path defined in the `volumes` section of `docker-compose.yml`.
+- Files are served from the path defined in the `volumes` section of `compose.yml`.
   Change `/home/georges-nasrallah` to any directory you want to expose via the UI.
 - For large file transfers, avoid using filebrowser. Use `rsync` instead.
