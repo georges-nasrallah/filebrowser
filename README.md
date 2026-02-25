@@ -12,7 +12,7 @@ export PGID=1000
 ```
 > Run `id` to get your actual UID and GID.
 
-- Or create a `.env` file next to your `docker-compose.yml`:
+- Or create a `.env` file next to your `compose.yml`:
 ```env
 PUID=1000
 PGID=1000
@@ -25,7 +25,7 @@ Access the UI at `http://<server-ip>:8095`
 
 Default user: `admin`
 
-> If login fails, check the logs for a randomly generated password:
+> Check the logs for a randomly generated password:
 > ```bash
 > docker logs filebrowser
 > ```
