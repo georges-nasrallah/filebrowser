@@ -1,0 +1,14 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:s6
+    container_name: filebrowser
+    volumes:
+      - /home/georges-nasrallah:/srv
+      - ./filebrowser.db:/database/filebrowser.db
+      - ./settings.json:/config/settings.json
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    ports:
+      - "8095:80"
+    restart: unless-stopped
